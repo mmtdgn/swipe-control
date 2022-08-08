@@ -22,7 +22,7 @@ Swipe controller for Unity games.
 | ------------------------ | -------------------------------------------------- |
 | `Action<SwipeDirection>` | Invokes after swipe with swipe direction           |
 | `Swipe Direction`        | Define of swipe direction. Left, Right, Up or Down |
-| `SwipeMode`              | Distance mode , Input cut mode                     |
+| `SwipeMode`              | Distance mode, Input cut mode                     |
   
 ### SwipeMode
   `Distance Mode` : `OnSwipe` event invokes after reached to desired swipe distance.  
