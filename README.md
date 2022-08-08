@@ -28,7 +28,7 @@ Swipe controller for Unity games.
   `Distance Mode` : `OnSwipe` event invokes after reached to desired swipe distance.  
   `InputCut Mode` : `OnSwipe` event waits for the finger&mouse up to invoke.
   
-  ### Construct swiper
+  ### Construct swipe
 ```c
     public class SwipeController : MonoBehaviour
     {
@@ -61,7 +61,7 @@ public class Test : MonoBehaviour
     private void OnSwiped(SwipeDirection direction)
     {
 #if DEBUG
-        Debug.LogWarning("Move\n " + Enum.GetName(typeof(SwipeDirection), direction));
+        Debug.LogWarning("Move\n" + Enum.GetName(typeof(SwipeDirection), direction));
 #endif
     }
 }
