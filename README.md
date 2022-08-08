@@ -13,7 +13,7 @@ Swipe controller for Unity games.
 </details>
 
 ### Usage
-1. Add `SwipeController` script to your scene.
+1. Add `SwipeController` script to your scene.  
   1.Change `swipe sens` field as you desire for the change the sensitivity.
 2. Register to `OnSwiped` event from `SwipeController' as where you need it.
 
