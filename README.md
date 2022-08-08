@@ -53,6 +53,7 @@ public class Test : MonoBehaviour
     {
         SwipeController.OnSwiped += OnSwiped;
     }
+  
     private void OnDestroy()
     {
         SwipeController.OnSwiped -= OnSwiped;
