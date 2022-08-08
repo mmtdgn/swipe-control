@@ -25,7 +25,7 @@ Swipe controller for Unity games.
 | `SwipeMode`              | Distance mode , Input cut mode                     |
   
 ### SwipeMode
-  `Distance Mode` : `OnSwipe` event invokes after reached to desired swipe distance.
+  `Distance Mode` : `OnSwipe` event invokes after reached to desired swipe distance.  
   `InputCut Mode` : `OnSwipe` event waits for the finger&mouse up to invoke.
   
 ### Example
