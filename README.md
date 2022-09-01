@@ -39,7 +39,7 @@ Swipe controller for games.
 
         private void Awake()
         {
-            m_Swipe = new Swipe(this, m_SwipeSens , SwipeMode.Distance);
+            m_Swipe = new Swipe(this, m_SwipeSens, SwipeMode.Distance);
             m_IsReady = true;
         }
     }
