@@ -10,18 +10,17 @@ namespace MD.Swipe
         [SerializeField] protected float m_SwipeSens = 25f;
         protected Swipe m_Swipe;
         protected bool m_IsReady;
-        protected bool m_IsBlocked;
 
         private void Awake()
         {
-            m_Swipe = new Swipe(this, m_SwipeSens);
+            m_Swipe = new Swipe(this, m_SwipeSens, SwipeMode.Distance);
             m_IsReady = true;
         }
 
         /// <summary>
         /// swipe is not allowed when level complete.
         /// </summary>
-        private void OnLevelCompleted()
+        private void OnLevelCompleted()//Listen level completed event.
         {
             m_IsReady = false;
         }
@@ -29,7 +28,7 @@ namespace MD.Swipe
         /// <summary>
         /// Reset on level change.
         /// </summary>
-        private void OnLevelChange()
+        private void OnLevelChange()//listen level change event.
         {
             m_IsReady = true;
         }
@@ -53,8 +52,7 @@ namespace MD.Swipe
         {
             OnSwiped?.Invoke(swipeDirection);
 #if DEBUG
-            Debug.Log("Swipe => Invoked(" + Enum.GetName(
-            typeof(SwipeDirection), swipeDirection) + ")");
+            Debug.LogWarning("Move\n " + Enum.GetName(typeof(SwipeDirection), swipeDirection));
 #endif
         }
     }
